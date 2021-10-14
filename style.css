@@ -1,14 +1,23 @@
-body > *{
+/* body > *{
     border: 1px solid black;
-}
+} */
 
 body{
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    ". dropdown dropdown ."
+    ". display display ."
+    ". review review ."
+    ". ul ul .";
     background-color: lavender;
+    grid-gap: 15px
 }
 
 header{
+    grid-area: header;
     background-color: skyblue;
-    max-width: 75%;
+    width: 75%;
     margin: 0 auto;
     font-family: monospace;
 }
@@ -17,19 +26,33 @@ header img{
 }
 
 header h1{
-float: right;
-margin-right: 75px;
+    float: right;
+    margin-right: 75px;
 }
 
 #movie-dropdown{
-font-family: monospace;
+    grid-area: dropdown;
+    font-family: monospace;
+    text-align: left;
+    margin-left: 180px;
 }
 
 #display-info{
-font-family: monospace;
-justify-content: center;
+    grid-area: display;
+    font-family: monospace;
+    width: 65%;
+    margin: 0 auto;
 }
 
 #user-review{
+    grid-area: review;
+    margin-left: 150px;
+    font-family: monospace;
+}
 
+ul{
+    grid-area: ul;
+    width: 65%;
+    margin: 0 auto;
+    font-family: monospace;
 }
