@@ -1,0 +1,30 @@
+body > *{
+    border: 1px solid black;
+}
+
+body{
+    background-color: lavender;
+}
+
+header{
+    background-color: skyblue;
+    max-width: 75%;
+    margin: 0 auto;
+    font-family: monospace;
+
+}
+header img{
+    width: 300px;
+}
+
+#movie-dropdown{
+font-family: monospace;
+}
+
+#display-info{
+font-family: monospace;
+}
+
+#user-review{
+
+}
